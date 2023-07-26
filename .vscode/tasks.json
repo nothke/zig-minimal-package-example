@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "zig",
+            "args": [
+                "build",
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                //"reveal": "silent"
+            },
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "zig",
+            "args": [
+                "build",
+                "test",
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                //"reveal": "silent"
+            },
+        }
+    ]
+}
