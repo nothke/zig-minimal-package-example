@@ -4,7 +4,7 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    _ = b.addModule("zig-package-test", .{
+    _ = b.addModule("zig-minimal-package-example", .{
         .source_file = std.Build.FileSource.relative("src/main.zig"),
     });
 
